@@ -1,4 +1,3 @@
-"use server"
 
 export const getUser = async ({id}: {id: string}) => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -8,14 +7,4 @@ export const getUser = async ({id}: {id: string}) => {
     id,
     name: 'John Doe',
   }
-}
-
-export const postUser = async (name: string) => {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  console.log('User created:', name);
-
-  return {
-    id: '123',
-    name,
-  };
 }

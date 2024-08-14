@@ -1,9 +1,9 @@
+import { getUser } from "@/queries/user";
 import { ClientUser } from "./ClientUser";
 import { CreateUser } from "./CreateUser";
-import { troute } from "@/troute";
 
 export default async function Home() {
-  const user = await troute.getUser.action({ id: '123' });
+  const user = await getUser({id: '123'});
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

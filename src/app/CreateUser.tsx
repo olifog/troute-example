@@ -1,10 +1,10 @@
 "use client"
 
-import { postUser } from "@/queries/user"
+import { postUser } from "@/actions/user"
 
 export const CreateUser = () => {
   return (
-    <button onClick={() => postUser('name')}>
+    <button onClick={() => postUser("name")}>
       Create user
     </button>
   )
